@@ -17,8 +17,8 @@ class Mount:
   def is_found( self )->Bool:
     if self.found != True:
       mov_eax_1("Storage Drive Not Mounted, Because It Was Not Found.\n")
-      mov_int_kernel()
-      mov_eax_60()
+      mov_int_kernel() # error
+      mov_eax_60() # exit
       return False
     mov_eax_1("Storage Drive Was Found, Mounted To API.\n")
     return self.found = True
