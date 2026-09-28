@@ -20,3 +20,6 @@ class Mount:
       return False
     mov_eax_1("Storage Drive Was Found, Mounted To API.\n")
     return self.found = True
+
+def write_name(self):
+  mov_eax_1( self.name )
