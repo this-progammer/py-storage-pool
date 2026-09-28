@@ -3,7 +3,7 @@
 # Programmer : Hunter M. *Aether
 
 # writes a string to output.
-def mov_eax_1( chars: str):
+def mov_eax_1( chars : str ):
   print( chars )
 
 # exit
