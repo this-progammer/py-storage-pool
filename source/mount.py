@@ -2,6 +2,8 @@
 # Date : 9/28/2026
 # Programmer : Hunter M. *Aether
 
+from api import*
+
 class Mount:
   def __init__(self, name : str, id : int, found : Bool):
     self = self
@@ -14,5 +16,7 @@ class Mount:
 
   def is_found( self )->Bool:
     if self.found != True:
+      mov_eax_1("Storage Drive Not Mounted, Because It Was Not Found.\n")
       return False
+    mov_eax_1("Storage Drive Was Found, Mounted To API.\n")
     return self.found = True
